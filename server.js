@@ -32,6 +32,19 @@ app.use('/api/piezas', piezasRouter)
 const piezasAluminio =  require('./routes/aluminio')
 app.use('/api/aluminio', piezasAluminio)
 
+const piezaChapa = require("./routes/chapa")
+app.use('/api/chapa', piezaChapa)
+
+const piezaShop = require('./routes/shop')
+app.use('/api/shop', piezaShop)
+
+const piezaPlastico = require('./routes/plastico')
+app.use('/api/plastico', piezaPlastico)
+
+const piezaHierro = require('./routes/hierro')
+app.use('/api/hierro', piezaHierro)
+
+
 app.get('/', (req, res) => {
   res.send('Servidor funcionando correctamente');
 });
